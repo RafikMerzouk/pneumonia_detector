@@ -6,5 +6,4 @@ tensorflow
 opencv-python
 scikit-learn
 scikit-image
-matplotlib
 Pillow

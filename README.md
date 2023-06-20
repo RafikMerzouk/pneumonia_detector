@@ -6,6 +6,13 @@ This project aims to build a machine learning model for detecting pneumonia from
 
 The dataset used in this project consists of 5,863 X-Ray images (JPEG) and 2 categories: Pneumonia/Normal. It's organized into three folders (train, test, val) and contains subfolders for each image category. There are 5,216 X-Ray images in the training set, 624 in the testing set, and 16 images in the validation set.
 
+## Launch the project
+Make sure you have already installed **docker** and **docker-compose**
+
+```console
+foo@bar:~$ docker-compose up --build
+```
+
 ## Models Used
 
 1. **Logistic Regression**: Logistic regression is a statistical model that in its basic form uses a logistic function to model a binary dependent variable.
@@ -45,5 +52,27 @@ Based on the results, here are some potential conclusions:
 
 4. **LDA**: The LDA model had the lowest scores on both metrics. This suggests that it struggled both with ranking instances of the two classes (as indicated by the low ROC-AUC score of 0.595) and with achieving a balance between precision and recall (as indicated by the low F1-score of 0.701).
 
+![F1 Score Comparison](model_comparison_f1.png)
+![ROC-AUC Score Comparison](model_comparison_roc.png)
+
+These images above compare the F1-Score and ROC-AUC score for all the models we have used.
+
 In summary, while all of our models performed reasonably well, the logistic regression model was the best at distinguishing between the two classes, and the KNN model was the best at achieving a balance between precision and recall. However, it's worth noting that the actual best model for a given problem can depend on a variety of factors, including the specific requirements of the task at hand (e.g., whether it's more important to catch all cases of pneumonia, even at the risk of some false positives, or to be absolutely sure about the cases it flags as pneumonia).
 
+
+
+
+
+
+
+
+
+
+Thank you
+
+
+<p align="center">
+  <div class="footer">
+            &copy; Made with :heart: by me
+        </div>
+</p>

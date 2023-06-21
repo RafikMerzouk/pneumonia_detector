@@ -6,6 +6,16 @@ This project aims to build a machine learning model for detecting pneumonia from
 
 The dataset used in this project consists of 5,863 X-Ray images (JPEG) and 2 categories: Pneumonia/Normal. It's organized into three folders (train, test, val) and contains subfolders for each image category. There are 5,216 X-Ray images in the training set, 624 in the testing set, and 16 images in the validation set.
 
+## Normal example
+![Normal example](sample/NORMAL2-IM-1427-0001.jpeg)
+
+
+
+
+
+## Pnemonia example
+![Pneumonia example](sample/person1946_bacteria_4874.jpeg)
+
 ## Launch the project
 Make sure you have already installed **docker** and **docker-compose**
 
